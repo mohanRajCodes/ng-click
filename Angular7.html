@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="MyModule">
+<head>
+<meta charset="ISO-8859-1">
+<title>Angular lesson 7-Event handing</title>
+</head>
+<script src="C:\Users\577525\eclipse-workspace\AngularLesson7-Eventhandling\src\Scripts\angular.js"></script>
+<script src="C:\Users\577525\eclipse-workspace\AngularLesson7-Eventhandling\src\Scripts\Angular7.js"></script>
+<body ng-controller="Mycontroller">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Name</th>
+<th>Likes</th>
+<th>Dislikes</th>
+<th>Likes/Dislikes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr ng-repeat="player in info">
+<td> {{ player.name }}</td>
+<td> {{ player.likes }}</td>
+<td> {{ player.dislikes }}</td>
+<td>
+
+<input type="Button" value="Like" ng-click="increament(player)"/>
+
+</td>
+<td>
+<input type="Button" value="DisLike" ng-click="decreament(player)"/>
+</td> 
+ </tr>
+
+</tbody>
+</table>
+
+<p id="Sum"></p>
+
+<p id="Dislike"></p>
+
+
+</body>
+</html>
